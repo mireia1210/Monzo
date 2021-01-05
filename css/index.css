@@ -1,0 +1,44 @@
+@import url(header.css);
+@import url(hero-banner.css);
+@import url(manage.css);
+@import url(current.css);
+@import url(footer.css);
+
+:root {
+    --Blue: #14233C;
+    --Blue-Grayish: #AAB2C0;
+    --Light-Blue: #00A0D6;
+    --Gray: #F8F8F8;
+
+    --Padding-Desktop: 48px;
+    --Padding-Mobile: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0px var(--Padding-Desktop);
+}
+
+@media (max-width: 750px) {
+    .content {
+        padding: 0px var(--Padding-Mobile);
+    }
+}

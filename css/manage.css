@@ -1,0 +1,75 @@
+.manage-your-money {
+    padding: 60px 0px;
+}
+
+.manage-your-money .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.manage-text {
+    width: 50%;
+}
+
+.manage-img {
+    width: 40%;
+}
+
+.manage-img img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.manage-feature {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.manage-feature:last-child {
+    margin-bottom: 0px;
+}
+
+.manage-feature div {
+    margin-left: 32px;
+}
+
+.manage-feature-title {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.manage-icon {
+    width: 40px;
+}
+
+@media (max-width: 750px) {
+    .manage-your-money {
+        padding: 30px 0px;
+    }
+
+    .manage-your-money .content {
+        flex-direction: column;
+    }
+
+    .manage-text, .manage-img  {
+        width: 100%;
+    }
+
+    .manage-feature {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .manage-feature div {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .manage-img img {
+        position: initial;
+        transform: initial;
+    }
+
+}
